@@ -19,7 +19,8 @@
 }
 
 body {
-  background: var(--background);
+  background: url('/pixel-bg.webp') no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
   font-family: var(--font-press-start-2p), system-ui;
 }
