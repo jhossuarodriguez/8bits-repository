@@ -1,10 +1,27 @@
 "use client";
 
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image'
 
 export default function Home() {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [playCount, setPlayCount] = useState(0);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.3;
+    }
+  }, []);
+
+  const handlePlayAudio = () => {
+    if (audioRef.current && playCount < 2) {
+      audioRef.current.play();
+    }
+  };
+
+  const handleAudioEnded = () => {
+    setPlayCount(prev => prev + 1)
+  }
 
   return (
 
@@ -36,7 +53,7 @@ export default function Home() {
         />
       </div>
       <div className='text-center'>
-        <button className='cursor-pointer text-5xl hover:text-red-500 transition duration-200' onClick={() => audioRef.current?.play()}>Start Game</button>
+        <button className='cursor-pointer text-5xl hover:text-red-500 transition duration-200' onClick={handlePlayAudio}>Start Game</button>
       </div>
       <span className="flex justify-center items-end">
         <a href="https://portfolio-jhossua.vercel.app"
@@ -44,7 +61,7 @@ export default function Home() {
           rel="noopener noreferrer"
           className="hover:underline">Version anterior</a>
       </span>
-      <audio ref={audioRef} autoPlay loop className="hidden">
+      <audio ref={audioRef} className="hidden" onEnded={handleAudioEnded}>
         <source src="/theme.ogg" type="audio/ogg" />
       </audio>
     </div >
