@@ -6,10 +6,8 @@
   --font-press-start-2p: var(--font-press-start-2p);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #ededed;
-  }
+:root {
+  --foreground: #ededed;
 }
 
 body {
