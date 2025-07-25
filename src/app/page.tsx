@@ -8,9 +8,9 @@ export default function Home() {
 
   return (
 
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 gap-10 ">
-      <header className="text-4xl font-bold uppercase ">En desarrollo...</header>
-      <div className='flex justify-center items-center relative w-[300px] h-[300px] md:w-[512px] md:h-[380px] mx-auto'>
+    <div className="flex flex-col items-center justify-center min-h-screen md:p-8 gap-10 ">
+      <header className="text-2xl md:text-4xl font-bold uppercase">En desarrollo...</header>
+      <div className='flex justify-center items-center relative w-[350px] h-[300px] md:w-[512px] md:h-[380px] mx-auto'>
         <Image
           src="/sprites/back_sprites.webp"
           alt="Jhossua's Back Sprites"
