@@ -26,7 +26,7 @@ export default function Home() {
   return (
 
     <div className="flex flex-col items-center justify-center min-h-screen md:p-8 gap-10 ">
-      <header className="text-2xl md:text-4xl font-bold uppercase">En desarrollo...</header>
+      <header className="text-2xl md:text-4xl font-bold uppercase animate-pulse">En desarrollo...</header>
       <div className='flex justify-center items-center relative w-[350px] h-[300px] md:w-[512px] md:h-[380px] mx-auto'>
         <Image
           src="/sprites/back_sprites.webp"
@@ -53,7 +53,7 @@ export default function Home() {
         />
       </div>
       <div className='text-center'>
-        <button className='cursor-pointer text-5xl hover:text-red-500 transition duration-200' onClick={handlePlayAudio}>Start Game</button>
+        <button className='cursor-pointer text-5xl hover:text-red-500 transition duration-200 animate-pulse' onClick={handlePlayAudio}>Start Game</button>
       </div>
       <span className="flex justify-center items-end">
         <a href="https://portfolio-jhossua.vercel.app"
