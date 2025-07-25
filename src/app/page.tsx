@@ -16,7 +16,7 @@ export default function Home() {
           alt="Jhossua's Back Sprites"
           width={100}
           height={100}
-          className='w-24 md:w-32 animate-pulse absolute left-0'
+          className='w-24 md:w-32 animate-pulse absolute left-0 aspect-[64/53]'
         />
 
         <Image
@@ -24,7 +24,7 @@ export default function Home() {
           alt="Jhossua's Avatar"
           width={150}
           height={150}
-          className='w-36 md:w-48 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+          className='w-36 md:w-48 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 aspect-[169/367]'
         />
 
         <Image
@@ -32,7 +32,7 @@ export default function Home() {
           alt="Jhossua's Front Sprites"
           width={100}
           height={100}
-          className='w-24 md:w-32 animate-pulse absolute right-0'
+          className='w-24 md:w-32 animate-pulse absolute right-0 aspect-[64/53]'
         />
       </div>
       <div className='text-center'>
