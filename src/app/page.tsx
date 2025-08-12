@@ -29,7 +29,7 @@ export default function Home() {
       <header className="text-2xl md:text-4xl font-bold uppercase animate-pulse">En desarrollo...</header>
       <div className='flex justify-center items-center relative w-[350px] h-[500px] md:w-[512px] md:h-[380px] mx-auto'>
         <Image
-          src="assets/images/back_sprites.webp"
+          src="/assets/images/back_sprites.webp"
           alt="Jhossua's Back Sprites"
           width={100}
           height={100}
@@ -37,7 +37,7 @@ export default function Home() {
         />
 
         <Image
-          src="assets/sprites/characters/avatar.png"
+          src="/avatar.png"
           alt="Jhossua's Avatar"
           width={150}
           height={150}
@@ -45,7 +45,7 @@ export default function Home() {
         />
 
         <Image
-          src="assets/images/front_sprites.webp"
+          src="/assets/images/front_sprites.webp"
           alt="Jhossua's Front Sprites"
           width={100}
           height={100}
