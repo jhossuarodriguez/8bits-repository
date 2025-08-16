@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
 
-    <div className="flex flex-col items-center justify-center h-dvh md:p-8 gap-10 ">
+    <div className="flex flex-col items-center justify-center min-h-screen md:p-8 gap-10 ">
       <header className="text-2xl md:text-4xl font-bold uppercase animate-pulse">En desarrollo...</header>
       <div className='flex justify-center items-center relative w-[350px] h-[500px] md:w-[512px] md:h-[380px] mx-auto'>
         <Image
