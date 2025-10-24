@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
+
 
 const PRESS_START_2P = localFont({
   src: './fonts/press-start-2p-latin-400-normal.woff2',
@@ -28,6 +30,7 @@ export default function RootLayout({
         className={`${PRESS_START_2P.className} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
